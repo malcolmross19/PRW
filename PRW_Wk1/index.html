@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="Malcolm Ross">
+    <meta name="description" content="JavaScript CRUD Project">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.slim.min.js"></script>
+
+    <title>JavaScript CRUD Project</title>
+</head>
+<body>
+    <section class="container">
+        <section class="row">
+            <div id="logo">
+                <img src="images/food.jpg" alt="person at table with dessert on a plate" /> <!-- Photo by Vlad Deep on Unsplash -->
+            </div>
+        </section>
+        <section class="row">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="">Appetizers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Entrees</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Soups</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Salads</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Desserts</a></li>
+                </ul> <!-- nav navbar-nav -->
+            </nav>
+        </section> <!-- "row" -->
+        <section class="row" id="add">
+            <section class="col-lg-5">
+                <h2>Add A New Recipe</h2>
+                <form name="recipeForm" onsubmit="return(validate());">
+                    <label for="recipeName">Recipe Name: </label>
+                    <input type="text" placeholder="Recipe Name" id="recipeName" name="recipeName" /><br/>
+
+                    <label for="recipeDescription">Recipe Description: </label>
+                    <input type="text" placeholder="Recipe Description" id="recipeDescription" name="recipeDescription" /><br/>
+
+                    <label for="recipeCategory">Recipe Category: </label>
+                    <input type="text" placeholder="Recipe Category" id="recipeCategory" name="recipeCategory" /><br/>
+
+                    <label>Star Rating: </label>
+                    <div id="rating">
+                        <label>
+                            <input type="radio" class="rating" name="rating" value="5" title="5 stars"> 5
+                        </label>
+                        <label>
+                            <input type="radio" class="rating" name="rating" value="4" title="4 stars"> 4
+                        </label>
+                        <label>
+                            <input type="radio" class="rating" name="rating" value="3" title="3 stars"> 3
+                        </label>
+                        <label>
+                            <input type="radio" class="rating" name="rating" value="2" title="2 stars"> 2
+                        </label>
+                        <label>
+                            <input type="radio" class="rating" name="rating" value="1" title="1 star"> 1
+                        </label>
+                    </div>
+
+                    <button type="button" onclick="update();">Add Recipe</button>
+                </form>
+            </section>
+            <section class="col-lg-7">
+                <img src="images/recipe.jpg" alt="person holding recipe book" /> <!-- Photo by Dan Gold on Unsplash -->
+            </section>
+        </section> <!-- "row" -->
+        <section class="row" id="recipes">
+            <h2>Saved Recipes</h2>
+            <section id="saved"></section>
+            <section id="newRecipes"></section>
+        </section>
+        <section class="row">
+            <footer>
+                <p>Created by Malcolm Ross for PRW</p>
+            </footer>
+        </section>
+    </section> <!-- "container" -->
+
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="src/scripts.js"></script>
+
+</body>
+</html>

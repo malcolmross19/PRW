@@ -1,0 +1,179 @@
+nav {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #E99219;
+  margin-bottom: 50px; }
+  nav ul {
+    display: inline-block;
+    width: 100%;
+    height: 50px; }
+  nav li {
+    display: inline-block;
+    width: auto;
+    padding: 5px; }
+  nav a {
+    color: white; }
+
+html, body {
+  font-family: "Times New Roman", Times, serif;
+  background: #EADCC3; }
+
+#container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%; }
+
+.row {
+  width: 100%; }
+
+#logo {
+  width: 1200px;
+  height: 350px;
+  overflow: hidden; }
+  #logo img {
+    display: inline-block;
+    width: 100%;
+    opacity: 0.85; }
+
+#add, #recipes {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px; }
+  #add section, #recipes section {
+    display: inline-block;
+    height: 300px;
+    background: #BFB9B7;
+    overflow: hidden; }
+    #add section form, #recipes section form {
+      display: inline; }
+      #add section form label, #recipes section form label {
+        display: inline-block;
+        float: left;
+        clear: left;
+        width: 150px;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 8px; }
+      #add section form input, #recipes section form input {
+        display: inline-block;
+        float: left;
+        margin: 4px; }
+  #add img, #recipes img {
+    width: 100%; }
+  #add .col-lg-7, #recipes .col-lg-7 {
+    padding-right: 0; }
+  #add button, #recipes button {
+    background: #891A1C;
+    border-color: #891A1C;
+    color: white;
+    margin-top: 10px;
+    display: block;
+    float: left;
+    clear: left;
+    margin-left: 10em; }
+  #add p, #recipes p {
+    display: block;
+    margin-right: 15px; }
+  #add i, #recipes i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    padding: 2px; }
+
+#recipes section {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: auto; }
+
+h2 {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px; }
+
+label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 8px; }
+
+input {
+  display: inline-block;
+  float: left;
+  margin: 4px; }
+
+.fa-star:hover {
+  color: gold; }
+
+#rating {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 40px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  width: 8em;
+  float: left; }
+  #rating input {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    left: -999999px; }
+  #rating label {
+    display: inline-block;
+    width: 25px;
+    font-size: 0; }
+  #rating > label:before {
+    position: relative;
+    font: 24px/1 FontAwesome;
+    display: inline-block;
+    content: "\f005";
+    color: #000;
+    background: linear-gradient(-45deg, #373737 0%, #141414 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  #rating > label:hover:before,
+  #rating > label:hover ~ label:before,
+  #rating > label.selected:before,
+  #rating > label.selected ~ label:before {
+    color: gold;
+    background: linear-gradient(-45deg, #fcb551 0%, #d69a45 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.recipe {
+  display: inline-block;
+  width: 285px;
+  height: auto;
+  background: #fff;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: auto; }
+  .recipe p {
+    display: block;
+    text-align: left;
+    clear: left; }
+
+footer {
+  display: block;
+  width: 1110px;
+  text-align: center;
+  background: #502708;
+  position: absolute;
+  bottom: -550px;
+  margin: 0 auto; }
+  footer p {
+    color: #FFF; }

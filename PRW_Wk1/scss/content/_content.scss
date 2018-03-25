@@ -1,0 +1,189 @@
+//Content
+
+#logo {
+  width: 1200px;
+  height: 350px;
+  overflow: hidden;
+
+  img {
+    display: inline-block;
+    width: 100%;
+    opacity: 0.85;
+  }
+}
+
+#add, #recipes {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  section {
+    display: inline-block;
+    height: 300px;
+    background: $secondary-color;
+    overflow: hidden;
+
+    form {
+      display: inline;
+
+      label {
+        display: inline-block;
+        float: left;
+        clear: left;
+        width: 150px;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 8px;
+      }
+
+      input {
+        display: inline-block;
+        float: left;
+        margin: 4px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .col-lg-7 {
+    padding-right: 0;
+  }
+
+  button {
+    background: $complementary-color;
+    border-color: $complementary-color;
+    color: white;
+    margin-top: 10px;
+    display: block;
+    float: left;
+    clear: left;
+    margin-left: 10em;
+  }
+
+  p {
+    display: block;
+    margin-right: 15px;
+  }
+
+  i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    padding: 2px;
+  }
+}
+
+#recipes section {
+  display: inline-flex;
+  overflow: auto;
+}
+
+h2 {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+input {
+  display: inline-block;
+  float: left;
+  margin: 4px;
+}
+
+.fa-star:hover {
+  color: gold;
+}
+
+#rating {
+  display: inline-flex;
+  margin-left: 40px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  width: 8em;
+  float: left;
+
+  input {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    left: -999999px;
+  }
+
+  label {
+    display: inline-block;
+    width: 25px;
+    font-size: 0;
+  }
+
+  > label:before {
+    position: relative;
+    font: 24px/1 FontAwesome;
+    display: inline-block;
+    content: "\f005";
+    color: #000;
+    background: linear-gradient(-45deg, #373737 0%, #141414 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  > label:hover:before,
+  > label:hover ~ label:before,
+  > label.selected:before,
+  > label.selected ~ label:before {
+    color: gold;
+    background: linear-gradient(-45deg, #fcb551 0%, #d69a45 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.recipe {
+  display: inline-block;
+  width: 285px;
+  height: auto;
+  background: #fff;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: auto;
+
+  p {
+    display: block;
+    text-align: left;
+    clear: left;
+  }
+
+}
+
+footer {
+  display: block;
+  width: 1110px;
+  text-align: center;
+  background: $complementary-color2;
+  position: absolute;
+  bottom: -550px;
+  margin: 0 auto;
+
+  p {
+    color: #FFF;
+  }
+
+}
